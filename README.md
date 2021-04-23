@@ -13,15 +13,42 @@ Dentro de una comunidad de código abierto, nos han propuesto crear una herramie
 md-links
 
 2. Resumen del proyecto
-Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo, ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder interactuar con el sistema en sí, archivos, redes, ...
+Este proyecto presenta una API librería, la cual le permiten al usuario, realizar la validación de links y verificar su estado a través de los comandos --validate y --stats. No obstante a ello, de no colocar correctamente los comandos antes mencionados, el terminal le indicará al usuario que ingrese los comandos antes correctos (--validate y --stats).
 
-En este proyecto nos alejamos un poco del navegador para construir un programa que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el sistema archivos, con el entorno (proceso, env, stdin/stdout/stderr), ...
+Por otro lado, para usar los comandos --validate y --stats, se debe de colocar antes md-links más el nombre de la carpeta en donde se encuentran los links que se van a verificar, para este proyecto el nombre de esta carpeta donde se encuentran los links que se van a verificar es "pruebas", es decir; que para llamar correctamente a los comandos se realiza de la siguiente manera: 
 
-En este proyecto crearás una herramienta de línea de comando (CLI) así como tu propia librería (o biblioteca - library) en JavaScript.
+- md-links pruebas --validate 
+- md-links pruebas --stats
+- md-links pruebas --stats --validate // md-links pruebas --validate --stats
+
+A continuación se muestran los resultados que brinda la consola para cada comando.
+
+## Comando --validate
+
+![Comando --validate](./imagenes/validate.jpg)
+
+## Comando --stats
+
+![Comando --stats](./imagenes/stats.jpg)
+
+## Comando --stats --validate
+
+![Comando --stats](./imagenes/statsvalidate.jpg)
+
+## Comando incorrecto
+
+![Comando incorrecto](./imagenes/comandoincorrecto.jpg)
 
 3. Diagrama de Flujo
-API
-https://ibb.co/ZmVBYgD
 
-CLI
-https://ibb.co/mSkyh4m
+A continuación se muestran los diagramas de frujo que se crearon inicialmente para la realización de este proyecto, correspondientes al API y CLI.
+
+## Diagrama de flujo API
+
+![API](./imagenes/diagramaAPI.jpeg)
+
+## Diagrama de flujo CLI
+
+![API](./imagenes/diagramaCLI.jpeg)
+
+

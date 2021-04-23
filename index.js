@@ -89,7 +89,7 @@ const validateLinks = (arrLiknsValidate) => {
           ...obj,
         }
       ))
-      .catch(() => ({ status: 404, message: 'FAIL', ...obj })),
+      .catch(() => ({ status: 404, message: 'FAIL', ...obj })), // los 3 puntos, sirve para editar el objeto 
   );
   return Promise.all(arr);
 };
