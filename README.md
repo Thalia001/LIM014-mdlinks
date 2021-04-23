@@ -59,7 +59,7 @@ A continuación se muestran los resultados que brinda la consola para cada coman
 
 ## Comando --stats
 
-![Comando --stats](./imagenes/stats.jpg)
+![Comando --stats](./imagenes/stats1.jpg)
 
 ## Comando --stats --validate
 
